@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Xray Scanner</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = '../static/style/bootstrap.min.css')}}">
+    <script src="{{url_for('static', filename = '../static/js/node_modules/jquery/dist/jquery.js')}}"></script>
+    <script src="{{url_for('static', filename = '../static/js/bootstrap.min.js')}}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{{url_for('static', filename = '../static/js/bootstrap.bundle.min.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename = '../static/style/style.css')}}">
+
+    {% if scrollToAnchor %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.location.hash = '#{{scrollToAnchor}}';
+      });
+    </script>
+    {% endif %}
+
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e4e2dc;">
+        <a class="navbar-brand" href="#">
+            <img src="../static/images/xmain.png" height="60" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><h3>Home</h3> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><h3>About</h3></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scan"><h3>Scan</h3></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact"><h3>Contact</h3></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Main Page-->
+
+      <div class="page">
+          <div class="content-wrap">
+            <div class="container-lg">
+                <div class="ml-sm-5 main">
+                    <svg class="ml-sm-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85%" height="85%" viewBox="0 0 1229 466"><defs><clipPath id="b"><rect width="1229" height="466"/></clipPath></defs><g id="a" clip-path="url(#b)"><rect width="1229" height="466" fill="#e4e2dc"/><text transform="translate(55 304)" fill="#e93d71" font-size="200" font-family="WorkSans-SemiBold, Work Sans" font-weight="600"><tspan x="0" y="0" fill="#000">Digital</tspan><tspan y="0" fill="#707070"> </tspan><tspan y="0" fill="#e93d71">Xray</tspan></text><line x2="0.454" y2="59.004" transform="translate(768.046 318.496)" fill="none" stroke="#e93d71" stroke-linecap="square" stroke-width="31" style="mix-blend-mode:darken;isolation:isolate"/><line x1="655.561" y1="0.059" transform="translate(86.5 377.5)" fill="none" stroke="#e93d71" stroke-linecap="square" stroke-width="31" style="mix-blend-mode:darken;isolation:isolate"/><path d="M0,0,.454,59" transform="translate(650.303 87.495) rotate(0.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-width="27.4" style="mix-blend-mode:darken;isolation:isolate"/><line x1="491" y2="2" transform="translate(678.5 87.5)" fill="none" stroke="#000" stroke-linecap="square" stroke-width="31" style="mix-blend-mode:darken;isolation:isolate"/><g transform="translate(208 158)" fill="#e93d71" stroke="#e93d71" stroke-width="1"><ellipse cx="18.5" cy="17" rx="18.5" ry="17" stroke="none"/><ellipse cx="18.5" cy="17" rx="18" ry="16.5" fill="none"/></g><g transform="translate(374 158)" fill="#e93d71"><path d="M 18.5 33.5 C 13.68412017822266 33.5 9.158510208129883 31.77850914001465 5.756840229034424 28.65265083312988 C 2.366909980773926 25.53759002685547 0.5 21.39925956726074 0.5 17 C 0.5 12.60074043273926 2.366909980773926 8.462409973144531 5.756840229034424 5.347350120544434 C 9.158510208129883 2.221489906311035 13.68412017822266 0.5 18.5 0.5 C 23.31587982177734 0.5 27.84148979187012 2.221489906311035 31.24316024780273 5.347350120544434 C 34.63309097290039 8.462409973144531 36.5 12.60074043273926 36.5 17 C 36.5 21.39925956726074 34.63309097290039 25.53759002685547 31.24316024780273 28.65265083312988 C 27.84148979187012 31.77850914001465 23.31587982177734 33.5 18.5 33.5 Z" stroke="none"/><path d="M 18.5 1 C 13.80975914001465 1 9.404300689697266 2.67466926574707 6.095149993896484 5.715509414672852 C 2.809490203857422 8.734769821166992 1 12.74234008789062 1 17 C 1 21.25765991210938 2.809490203857422 25.26523017883301 6.095149993896484 28.28449058532715 C 9.404300689697266 31.32533073425293 13.80975914001465 33 18.5 33 C 23.19023895263672 33 27.59569931030273 31.32533073425293 30.90485000610352 28.28449058532715 C 34.19050979614258 25.26523017883301 36 21.25765991210938 36 17 C 36 12.74234008789062 34.19050979614258 8.734769821166992 30.90485000610352 5.715509414672852 C 27.59569931030273 2.67466926574707 23.19023895263672 1 18.5 1 M 18.5 0 C 28.71726989746094 0 37 7.611160278320312 37 17 C 37 26.38883972167969 28.71726989746094 34 18.5 34 C 8.282730102539062 34 0 26.38883972167969 0 17 C 0 7.611160278320312 8.282730102539062 0 18.5 0 Z" stroke="none" fill="#e93d71"/></g></g></svg>
+                </div>
+                <div class="text-center mt-md-n5">
+                    <a href="#about"><img src="../static/images/down arrow.gif" height="20%" width="20%"></a>
+                </div>
+
+                <div id="about">
+                  <div class="text-center heading mt-5">
+                    <h1>ABOUT</h1>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-lg-6 text-justify">
+                      <h4 style="line-height: 2.5rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit dolorem modi eligendi provident dolores aperiam magnam nostrum voluptate?
+                        Porro aspernatur at vel laudantium, aut eligendi minus hello ut magnam fugit! Lorem ipsum dolor sit amet consectetur the adipisicing elit. Amet, repellendus quisquam autem repudiandae yoo iure commodi provident saepe at officiis dicta beatae expedita.
+                        Architecto cum consequatur reprehenderit, neque at nulla assumenda.</h4>
+                    </div>
+                    <div class="col-lg-6 text-lg-right text-center">
+                      <img class="xrayimg" src="../static/images/xray-removebg-preview.png" height="90%" width="90%">
+                    </div>
+                  </div>
+                </div>
+
+                <div id="scan">
+                  <div class="text-center heading mt-5">
+                    <h1>SCAN</h1>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-lg-6 text-center sc mt-1">
+                      <h1>Upload your <span style="color: #e93d71;">Xray</span> :</h1>
+                    </div>
+                    <div class="col-lg-6">
+                      <form action="/submit" method="post" enctype="multipart/form-data">
+                        <div class="custom-file ml-lg-n5">
+                          <input type="file" class="custom-file-input form-control-lg" id="customFile" name="my_image">
+                          <label class="custom-file-label form-control-lg" for="customFile"><h3 class="choose">Choose file</h3></label>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-danger btn-lg text-center">Submit</button>
+                  </div>
+                </form>
+                  {% if prediction == "NORMAL" %}
+                    <div class="mt-5 text-center result">
+                        <h1><span style="color: #9a1750; font-weight: 700; letter-spacing: 0.2rem;">Your Xray's are {{prediction}}</span> </h1>
+                    </div> 
+                  {%  elif prediction %}
+                    <div class="mt-5 text-center result">
+                        <h1><span style="color: #9a1750; font-weight: 700; letter-spacing: 0.2rem;">You are suffering through {{prediction}}</span> </h1>
+                    </div>
+                  {% endif %} 
+                </div>
+
+                <div id="contact">
+                  <div class="text-center heading mt-5">
+                    <h1>CONTACT</h1>
+                    <div class="text-center mt-5">
+                      <ul class="list mb-5"> 
+                        <li>
+                          <a href=""><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fa fa-facebook-official fa-3x ml-5" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fa fa-instagram fa-3x ml-5" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fa fa-twitter-square fa-3x ml-5" aria-hidden="true"></i></a>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+            </div>          
+            </div>
+            <footer class="text-center">
+              <h4 class="text-center mt-4">Made with ❤️</h4>
+              <h6 class="my-4"> © Copyright <span style="color: #e93d71;"><b>Digital Xray</b></span>. All Rights Reserved</h6>
+          </footer>
+      </div>
+      <script src="{{url_for('static', filename = '../static/js/style.js')}}"></script>
+</body>
+</html>

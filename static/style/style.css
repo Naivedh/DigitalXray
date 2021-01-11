@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body, html{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #e4e2dc;
+    scroll-behavior: smooth;
+}
+.page{
+    position: relative;
+    min-height: 100vh;
+}
+.main {
+    margin-top: 165px;
+}
+#about {
+    margin-top: 0;
+}
+.navbar-collapse{
+    text-align: center;
+}
+.nav-item h3{
+    color: #E93D71;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.nav-item h3:hover {
+    color: #9a1750;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3rem; 
+    transition: 0.4s;   
+}
+.content-wrap{
+    padding-bottom: 9rem;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: #d8d6d1;
+  }
+.heading h1{
+    font-weight: 700;
+    color: #E93D71;
+    text-decoration: underline #9a1750;
+    text-decoration-thickness: 0.4rem;
+}
+.custom-file-label{
+    background-color: transparent;
+    color: #9a1750;
+    border-color: #E93D71;
+    border-width: 0.22rem;
+    border-radius: 1rem;
+    height: 60px;
+}
+.custom-file-label::after{
+    color: #e4e2dc;
+    background-color: #E93D71;
+    border-top-right-radius: 0.25rem;
+    border-width: 0;
+    height: 100%;
+}
+.btn-danger {
+    color: #e4e2dc;
+    background-color: #E93D71;
+    border-color: #E93D71;
+}
+.btn-danger:hover {
+    background-color: #9a1750;
+    border-color: #9a1750;
+}
+
+.btn {
+    border-radius:  1rem;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+}
+ul a {
+    color: #9a1750;
+    transition: 0.4s;
+}
+ul li :hover{
+    color: #E93D71;
+    transition: 0.4s;
+}
+
+@media (max-width: 575.98px) {
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+    .main {
+        margin-top: 190px;
+    }
+    #about {
+        margin-top: 269px;
+    }
+    .sc h1{
+        font-size: 2rem;
+    }
+    .custom-file-label::after{
+        font-size: 1.3rem;
+    }
+    .choose {
+        margin-top: 0.3rem;
+        font-size: 1.5rem;
+    }
+    .result h1 {
+        font-size: 2rem;
+    }
+ }
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    .xrayimg{
+        height: 80%;
+        width: 50%;
+    }
+    #about {
+        margin-top: 200px;
+    }
+ }
